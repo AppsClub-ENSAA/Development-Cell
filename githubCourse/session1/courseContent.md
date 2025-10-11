@@ -1,9 +1,8 @@
 => Why git is important and draw something that looks like git log --graph --all
     - talk about how git helps you to have many versions of your project
-    - Challenge1: Linux command: ls, mkdir, cd, touch
 
 => Then talk about git:
-
+    - Challenge1: Linux command: ls, mkdir, cd, touch
     - Talk about the workflow, and explain why stage is important
     - git init, git add files, git commit -m "message"
     - git log 
