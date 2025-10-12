@@ -6,11 +6,12 @@
     - Talk about the workflow, and explain why stage is important
     - git init, git add files, git commit -m "message"
     - git log 
-    - Talk about git add .  
     - Challenge2: Do the same workflow 
-    - Challenge3: Tweak it a bit 
+    - Talk about git add .  
+    - Challenge3: Tweak it a bit and talk about how to divide commits
 
 => Talk about branches:
+    -> what problem do branches solve
     -> Demonstrate the workflow and show them how the main branch is not touched
     -> challenge4: The same workflow
     -> talk about merge 
