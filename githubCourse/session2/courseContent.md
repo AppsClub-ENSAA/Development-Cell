@@ -12,6 +12,9 @@
 -> Talk about conflicts that might happen while collaborating and what are the best practices : git pull, pull request
 -> challenge4 : Duo challenge
 
+-> Talk about forking 
+->challenge5: fork some known repo
+
 -> There's time ? talk about github interface
 
 
