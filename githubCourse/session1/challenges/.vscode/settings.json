@@ -1,0 +1,12 @@
+{
+  // Disable common markdown -> PDF auto-export features in popular extensions
+  "markdown-pdf.exportOnSave": false,
+  "markdown-pdf.type": "pdf",
+  "markdown-pdf.includeFrontMatter": false,
+  // If using Markdown All in One or Print to PDF extensions
+  "markdown.extension.print.absoluteImgPath": false,
+  // Prevent any watcher from auto building on save
+  "files.watcherExclude": {
+    "**/*.pdf": true
+  }
+}

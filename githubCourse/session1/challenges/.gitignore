@@ -1,0 +1,3 @@
+# Ignore generated PDFs
+**/README.pdf
+**/*.pdf
