@@ -33,8 +33,6 @@ You’ll build a tiny project with three independent text files. Commit each par
 
 4. Stage and commit the files one by one in three separate commits (selective staging).
 
-5. View history: `git log --oneline --graph`.
-
 EN — Hints
 
 - Stage selectively: git add path/to/file
@@ -70,4 +68,3 @@ Vous allez créer un mini projet avec trois fichiers texte indépendants. Valide
    - `Contact.txt` -> Horaires : 9h–17h UTC
 
 4. Indexez et validez-les fichiers par un en trois commits séparés (index sélectif).
-5. Affichez l’historique : `git log --oneline --graph`.

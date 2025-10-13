@@ -28,7 +28,7 @@ git config --global init.defaultBranch main
 4. Stage the file and commit with a clear message.
 5. Add a second line to `Story.txt`:
    - Chapter 2: We add our first feature
-6. View the commit history (short format).
+6. Stage the file and commit with a clear message.
 
 EN — Hints
 
@@ -36,7 +36,6 @@ EN — Hints
 - Check status: `git status`
 - Stage one file: `git add Story.txt`
 - Commit: `git commit -m "Add chapter 1"`
-- Log: `git log --oneline`
 
 ---
 
@@ -64,7 +63,7 @@ git config --global init.defaultBranch main
 4. Indexez le fichier et validez (commit) avec un message clair.
 5. Ajoutez une deuxième ligne à `Story.txt` :
    - Chapitre 2 : Nous ajoutons notre première fonctionnalité
-6. Affichez l’historique des commits (format court).
+6. Indexez le fichier et validez (commit) avec un message clair.
 
 FR — Indices
 
@@ -72,4 +71,3 @@ FR — Indices
 - État : `git status`
 - Indexer un fichier : `git add Story.txt`
 - Commit : `git commit -m "Ajouter chapitre 1"`
-- Historique : `git log --oneline`
