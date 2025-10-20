@@ -1,4 +1,4 @@
-# 🧩 Challenge 1 — Terminal Basics | Bases du Terminal
+# 🧩 Challenge 1 — First Git Workflow | Premier Flux Git
 
 This challenge is bilingual. English first, puis la version française plus bas.
 
@@ -6,68 +6,82 @@ This challenge is bilingual. English first, puis la version française plus bas.
 
 ## EN — Goal
 
-Get comfortable with Linux commands: navigate, create folders/files, and list directory contents.
+Create a Git repository, track changes, and make a couple of commits to see history.
+
+## EN — Before you start: Configure Git (once)
+
+Run these commands to set your identity, default editor, and default branch:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global core.editor "code --wait"
+git config --global init.defaultBranch main
+```
 
 ## EN — Tasks
 
-1. Open a terminal and go to the `work/` folder inside this challenge.
-2. Create a new folder `my-website` and enter it.
-3. Inside `my-website`, create:
-   - a file `index.html`
-   - a folder `css/` with a file `style.css`
-   - a folder `js/` with a file `app.js`
-4. List the structure to verify.
+1. Create a new folder for this challenge and enter it:
 
-Expected tree:
+- mkdir challenge1 && cd challenge1
 
-```
-my-website/
-├── index.html
-├── css/
-│ └── style.css
-└── js/
-└── app.js
-```
+2. Initialize Git here: `git init`
+3. Create a file `Story.txt` with exactly this first line:
+
+- Chapter 1: A new project begins
+
+4. Stage the file and commit with a clear message.
+5. Add a second line to `Story.txt`:
+
+- Chapter 2: We add our first feature
+
+6. Stage the file and commit with a clear message.
 
 EN — Hints
 
-- Create folder: mkdir folderName
-- Enter folder: cd folderName
-- Go back: cd ..
-- Create file: touch fileName
-- List files: ls
+- Initialize: `git init`
+- Check status: `git status`
+- Stage one file: `git add Story.txt`
+- Commit: `git commit -m "Add chapter 1"`
 
 ---
 
 ## FR — Objectif
 
-Se familiariser avec les commandes Linux: naviguer, créer des dossiers/fichiers, et lister le contenu.
+Créer un dépôt Git, suivre des changements et faire quelques commits pour voir l’historique.
+
+## FR — Avant de commencer : Configurer Git (une seule fois)
+
+Exécutez ces commandes pour définir votre identité, l’éditeur par défaut et la branche par défaut :
+
+```bash
+git config --global user.name "Votre Nom"
+git config --global user.email "vous@example.com"
+git config --global core.editor "code --wait"
+git config --global init.defaultBranch main
+```
 
 ## FR — Tâches
 
-1. Ouvrez un terminal et allez dans le dossier `work/` de ce challenge.
-2. Créez un nouveau dossier `my-website` et entrez dedans.
-3. À l’intérieur de `my-website`, créez:
-   - un fichier `index.html`
-   - un dossier `css/` avec un fichier `style.css`
-   - un dossier `js/` avec un fichier `app.js`
-4. Listez la structure pour vérifier.
+1. Créez un nouveau dossier pour ce challenge et entrez dedans :
 
-Arborescence attendue:
+- mkdir challenge1 && cd challenge1
 
-```
-my-website/
-├── index.html
-├── css/
-│ └── style.css
-└── js/
-└── app.js
-```
+2. Initialisez Git ici : `git init`
+3. Créez un fichier `Story.txt` avec exactement cette première ligne :
+
+- Chapitre 1 : Un nouveau projet commence
+
+4. Indexez le fichier et validez (commit) avec un message clair.
+5. Ajoutez une deuxième ligne à `Story.txt` :
+
+- Chapitre 2 : Nous ajoutons notre première fonctionnalité
+
+6. Indexez le fichier et validez (commit) avec un message clair.
 
 FR — Indices
 
-- Créer un dossier: mkdir nomDossier
-- Entrer dans un dossier: cd nomDossier
-- Revenir en arrière: cd ..
-- Créer un fichier: touch nomFichier
-- Lister les fichiers: ls
+- Initialiser : `git init`
+- État : `git status`
+- Indexer un fichier : `git add Story.txt`
+- Commit : `git commit -m "Ajouter chapitre 1"`
