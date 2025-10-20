@@ -1,61 +1,91 @@
-# 🧩 Challenge 5 — Branches: Safe Parallel Work | Branches: Travail en parallèle
+# 🧩 Challenge 5 — Team Members Line-up | Classement des Membres
 
-This challenge is bilingual. English first, puis la version française plus bas.
+This challenge is bilingual. English first, puis la version française.
 
 ---
 
 ## EN — Goal
 
-Understand why branches exist, create a feature branch, and keep `main` clean while developing.
+Merge the prepared `newBranch` branch into `main` and resolve the conflict in `TeamMembers.txt`. Explore the file contents and figure out the **official order of the team members** yourself.
 
 ## EN — Tasks
 
-1. In `work/`, create `DarkMode.txt` with the content below and commit it:
-   - DarkMode: planned for v1.0
-2. Create and switch to a new branch `feature/about`.
-3. Create `About.txt` with exactly:
-   - About: This app tracks habits
-     Commit on `feature/about`.
-4. Switch back to `main` and confirm `About.txt` is not there (main remains untouched).
-5. Switch to `feature/about` again and append this line to `About.txt`:
-   - Updated: v1.0 coming soon
-     Commit again.
-6. Merge the feature branch into `main` (switch to `main`, then merge `feature/about`).
-7. Visualize branches after the merge: `git log --graph --oneline --decorate --all`.
-8. Confirm on `main` that `About.txt` is present with both lines.
+1. Create and enter a new folder for this challenge:
+   - mkdir ../challenge5 && cd ../challenge5
+2. Clone the challenge repository inside it:
 
-EN — Hints
+```bash
+git clone git@github.com:Houcineee/AppsTeamChallenge.git
+```
 
-- Create and switch: git switch -c feature/about (or: git checkout -b feature/about)
-- Switch back: git switch main
-- Merge: git switch main && git merge feature/about
-- See branches: git branch
-- Pretty graph: git log --graph --oneline --decorate --all
+3. Enter the cloned folder:
+
+```bash
+cd AppsTeamChallenge
+```
+
+4. Explore the branches and see which ones exist:
+
+```bash
+git branch -a
+```
+
+5. Switch to the `newBranch` branch (this will create a local branch tracking the remote):
+
+```bash
+git switch newBranch
+```
+
+6. Switch back to `main` and merge `newBranch`:
+
+```bash
+git switch main
+git merge newBranch
+```
+
+7. Resolve the conflict in `TeamMembers.txt` by arranging the members in the correct order.
+8. Complete the merge and check the final content and history.
+
+---
 
 ## FR — Objectif
 
-Comprendre l’utilité des branches, créer une branche de fonctionnalité et garder `main` propre pendant le dev.
+Fusionner la branche `newBranch` dans `main` et résoudre le conflit dans `TeamMembers.txt`. Explorez le contenu des fichiers pour **trouver vous-même le bon ordre des membres**.
 
 ## FR — Tâches
 
-1. Dans `work/`, créez `DarkMode.txt` avec le contenu ci-dessous et validez :
-   - ModeSombre : prévu pour v1.0
-2. Créez et basculez sur une nouvelle branche `feature/about`.
-3. Créez `About.txt` avec exactement :
-   - À propos : Cette app suit les habitudes
-     Validez sur `feature/about`.
-4. Revenez sur `main` et vérifiez que `About.txt` n’y est pas (main reste intacte).
-5. Revenez sur `feature/about` et ajoutez cette ligne à `About.txt` :
-   - Mise à jour : v1.0 arrive bientôt
-     Validez encore.
-6. Fusionnez la branche de fonctionnalité dans `main` (basculez sur `main`, puis fusionnez `feature/about`).
-7. Visualisez les branches après la fusion : `git log --graph --oneline --decorate --all`.
-8. Vérifiez sur `main` que `About.txt` est présent avec les deux lignes.
+1. Créez et entrez dans un nouveau dossier pour ce challenge :
+   - mkdir ../challenge5 && cd ../challenge5
+2. Clonez le dépôt du challenge dedans :
 
-FR — Indices
+```bash
+git clone git@github.com:Houcineee/AppsTeamChallenge.git
+```
 
-- Créer et basculer : `git switch -c feature/about` (ou : `git checkout -b feature/about`)
-- Revenir sur main : `git switch main`
-- Fusionner : `git switch main && git merge feature/about`
-- Lister les branches : `git branch`
-- Beau graphe : `git log --graph --oneline --decorate --all`
+3. Entrez dans le dossier cloné :
+
+```bash
+cd AppsTeamChallenge
+```
+
+4. Explorez les branches et vérifiez lesquelles existent :
+
+```bash
+git branch -a
+```
+
+5. Basculez sur la branche `newBranch` (cela créera une branche locale suivie de la branche distante) :
+
+```bash
+git switch newBranch
+```
+
+6. Revenez sur `main` et fusionnez `newBranch` :
+
+```bash
+git switch main
+git merge newBranch
+```
+
+7. Résolvez le conflit dans `TeamMembers.txt` en réorganisant correctement les membres.
+8. Terminez la fusion et vérifiez le contenu final et l’historique.

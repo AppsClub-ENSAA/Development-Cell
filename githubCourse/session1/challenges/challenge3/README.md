@@ -1,4 +1,4 @@
-# 🧩 Challenge 3 — Shaping Commits | Découper ses Commits
+# 🧩 Challenge 3 — Inspect, Undo, Revert | Inspecter, Annuler, Revenir
 
 This challenge is bilingual. English first, puis la version française plus bas.
 
@@ -6,65 +6,60 @@ This challenge is bilingual. English first, puis la version française plus bas.
 
 ## EN — Goal
 
-Practice staging carefully (not everything at once), splitting work into meaningful commits.
-
-## EN — Context
-
-You’ll build a tiny project with three independent text files. Commit each part separately so history tells a clear story.
+Use `git log` to inspect history and `git revert` to undo a specific commit safely.
 
 ## EN — Tasks
 
-1. In `work/`, create a folder `features/` with files and content:
-   - `DarkMode.txt`
-     - Enable dark mode option in settings
-   - `About.txt`
-     - About: This app helps you track habits
-   - `Contact.txt`
-     - Contact: support@example.com
-2. Commit in three steps:
-   - Commit 1: only add `DarkMode.txt` with message like "Add DarkMode feature note".
-   - Commit 2: only add `About.txt`.
-   - Commit 3: only add `Contact.txt`.
-3. Now modify all three files at once by adding one extra line to each:
-
-   - `DarkMode.txt` -> Default: dark mode OFF
-   - `About.txt` -> Updated: v1.0 launching soon
-   - `Contact.txt` -> Hours: 9am–5pm UTC
-
-4. Stage and commit the files one by one in three separate commits (selective staging).
+1. Create and enter a fresh folder for this challenge, then initialize a repo:
+   - mkdir ../challenge3 && cd ../challenge3
+   - git init
+2. Create `Roadmap.txt` with exactly this line, then stage and commit:
+   - Roadmap: Launch v1.0 with Dark Mode
+3. Create `BugReport.txt` with exactly this line, then stage and commit:
+   - BUG: Signup form crashes on submit
+4. Create `Changelog.txt` with exactly this line, then stage and commit:
+   - Changelog: Added About page
+5. Inspect the history:
+   - git log --graph --oneline --decorate --all
+6. Decide that the bug report commit should be reverted (it was filed in the wrong repo). Revert only that commit:
+   - git revert <hash-of-bug-commit>
+7. Confirm results:
+   - git log --graph --oneline --decorate --all
+   - `BugReport.txt` should now be removed or its addition undone by the revert commit.
 
 EN — Hints
 
-- Stage selectively: git add path/to/file
-- Commit message tip: imperative mood, short summary first line
+- Pretty log: git log --graph --oneline --decorate --all
+- Revert safely (creates a new commit): git revert <hash>
+- Status : git status
 
 ---
 
 ## FR — Objectif
 
-S’entraîner à indexer avec précision (pas tout d’un coup), découper le travail en commits pertinents.
-
-## FR — Contexte
-
-Vous allez créer un mini projet avec trois fichiers texte indépendants. Validez chaque partie séparément pour une histoire claire.
+Utiliser `git log` pour inspecter l’historique et `git revert` pour annuler un commit précis en toute sécurité.
 
 ## FR — Tâches
 
-1. Dans `work/`, créez un dossier `features/` avec fichiers et contenu :
-   - `DarkMode.txt`
-     - Activer l’option mode sombre dans les réglages
-   - `About.txt`
-     - À propos : Cette app aide à suivre vos habitudes
-   - `Contact.txt`
-     - Contact : support@example.com
-2. Faites trois commits :
-   - Commit 1 : seulement `DarkMode.txt` avec un message du type « Ajouter note DarkMode ».
-   - Commit 2 : seulement `About.txt`.
-   - Commit 3 : seulement `Contact.txt`.
-3. Modifiez les trois fichiers en ajoutant une ligne à chacun :
+1. Créez et entrez dans un nouveau dossier pour ce challenge, puis initialisez un dépôt :
+   - mkdir ../challenge3 && cd ../challenge3
+   - git init
+2. Créez `Roadmap.txt` avec exactement cette ligne, puis indexez et validez :
+   - Feuille de route : Lancer v1.0 avec mode sombre
+3. Créez `BugReport.txt` avec exactement cette ligne, puis indexez et validez :
+   - BUG : Le formulaire d’inscription plante à l’envoi
+4. Créez `Changelog.txt` avec exactement cette ligne, puis indexez et validez :
+   - Journal des changements : Ajout de la page À propos
+5. Inspectez l’historique :
+   - git log --graph --oneline --decorate --all
+6. Décidez que le commit du bug doit être annulé (mauvais dépôt). Annulez uniquement ce commit :
+   - git revert <hash-du-commit-bug>
+7. Vérifiez le résultat :
+   - git log --graph --oneline --decorate --all
+   - `BugReport.txt` doit maintenant être supprimé ou son ajout annulé par le commit de revert.
 
-   - `DarkMode.txt` -> Par défaut : mode sombre DÉSACTIVÉ
-   - `About.txt` -> Mise à jour : v1.0 arrive bientôt
-   - `Contact.txt` -> Horaires : 9h–17h UTC
+FR — Indices
 
-4. Indexez et validez-les fichiers par un en trois commits séparés (index sélectif).
+- Joli log : git log --graph --oneline --decorate --all
+- Annuler proprement (crée un nouveau commit) : git revert <hash>
+- État: git status
