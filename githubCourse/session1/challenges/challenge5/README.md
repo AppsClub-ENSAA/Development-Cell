@@ -11,7 +11,8 @@ Merge the prepared `newBranch` branch into `main` and resolve the conflict in `T
 ## EN — Tasks
 
 1. Create and enter a new folder for this challenge:
-   - mkdir ../challenge5 && cd ../challenge5
+   - mkdir ../challenge5
+   - cd ../challenge5
 2. Clone the challenge repository inside it:
 
 ```bash
@@ -55,7 +56,8 @@ Fusionner la branche `newBranch` dans `main` et résoudre le conflit dans `TeamM
 ## FR — Tâches
 
 1. Créez et entrez dans un nouveau dossier pour ce challenge :
-   - mkdir ../challenge5 && cd ../challenge5
+   - mkdir ../challenge5
+   - cd ../challenge5
 2. Clonez le dépôt du challenge dedans :
 
 ```bash

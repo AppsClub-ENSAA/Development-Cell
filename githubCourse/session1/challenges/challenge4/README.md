@@ -11,7 +11,8 @@ Understand why branches exist, create a feature branch, and keep `main` clean wh
 ## EN — Tasks
 
 1. Create and enter a new folder for this challenge:
-   - mkdir ../challenge4 && cd ../challenge4
+   - mkdir ../challenge4
+   - cd ../challenge4
    - git init
 2. Create `DarkMode.txt` with the content below and commit it:
    - DarkMode: planned for v1.0
@@ -31,7 +32,9 @@ EN — Hints
 
 - Create and switch: git switch -c feature/about (or: git checkout -b feature/about)
 - Switch back: git switch main
-- Merge: git switch main && git merge feature/about
+- Merge:
+  - git switch main
+  - git merge feature/about
 - See branches: git branch
 - Pretty graph: git log --graph --oneline --decorate --all
 
@@ -42,7 +45,8 @@ Comprendre l’utilité des branches, créer une branche de fonctionnalité et g
 ## FR — Tâches
 
 1. Créez et entrez dans un nouveau dossier pour ce challenge :
-   - mkdir ../challenge4 && cd ../challenge4
+   - mkdir ../challenge4
+   - cd ../challenge4
    - git init
 2. Créez `DarkMode.txt` avec le contenu ci-dessous et validez :
    - ModeSombre : prévu pour v1.0
@@ -62,6 +66,8 @@ FR — Indices
 
 - Créer et basculer : `git switch -c feature/about` (ou : `git checkout -b feature/about`)
 - Revenir sur main : `git switch main`
-- Fusionner : `git switch main && git merge feature/about`
+- Fusionner :
+  - `git switch main`
+  - `git merge feature/about`
 - Lister les branches : `git branch`
 - Beau graphe : `git log --graph --oneline --decorate --all`

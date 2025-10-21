@@ -16,7 +16,8 @@ You’ll build a tiny project with three independent text files. Commit each par
 
 1. Create a new folder for this challenge and enter it:
 
-- mkdir ../challenge2 && cd ../challenge2
+- mkdir ../challenge2
+- cd ../challenge2
 
 2. Create a folder `features/` with files and content:
    - `DarkMode.txt`
@@ -56,7 +57,8 @@ Vous allez créer un mini projet avec trois fichiers texte indépendants. Valide
 
 1. Créez un nouveau dossier pour ce challenge et entrez dedans :
 
-- mkdir ../challenge2 && cd ../challenge2
+- mkdir ../challenge2
+- cd ../challenge2
 
 2. Créez un dossier `features/` avec fichiers et contenu :
    - `DarkMode.txt`

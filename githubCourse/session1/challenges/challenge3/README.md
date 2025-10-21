@@ -11,7 +11,8 @@ Use `git log` to inspect history and `git revert` to undo a specific commit safe
 ## EN — Tasks
 
 1. Create and enter a fresh folder for this challenge, then initialize a repo:
-   - mkdir ../challenge3 && cd ../challenge3
+   - mkdir ../challenge3
+   - cd ../challenge3
    - git init
 2. Create `Roadmap.txt` with exactly this line, then stage and commit:
    - Roadmap: Launch v1.0 with Dark Mode
@@ -42,7 +43,8 @@ Utiliser `git log` pour inspecter l’historique et `git revert` pour annuler un
 ## FR — Tâches
 
 1. Créez et entrez dans un nouveau dossier pour ce challenge, puis initialisez un dépôt :
-   - mkdir ../challenge3 && cd ../challenge3
+   - mkdir ../challenge3
+   - cd ../challenge3
    - git init
 2. Créez `Roadmap.txt` avec exactement cette ligne, puis indexez et validez :
    - Feuille de route : Lancer v1.0 avec mode sombre

@@ -23,7 +23,8 @@ git config --global init.defaultBranch main
 
 1. Create a new folder for this challenge and enter it:
 
-- mkdir challenge1 && cd challenge1
+- mkdir challenge1
+- cd challenge1
 
 2. Initialize Git here: `git init`
 3. Create a file `Story.txt` with exactly this first line:
@@ -65,7 +66,8 @@ git config --global init.defaultBranch main
 
 1. Créez un nouveau dossier pour ce challenge et entrez dedans :
 
-- mkdir challenge1 && cd challenge1
+- mkdir challenge1
+- cd challenge1
 
 2. Initialisez Git ici : `git init`
 3. Créez un fichier `Story.txt` avec exactement cette première ligne :
