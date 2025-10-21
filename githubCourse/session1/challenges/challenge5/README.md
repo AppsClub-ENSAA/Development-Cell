@@ -30,7 +30,7 @@ cd AppsTeamChallenge
 git branch -a
 ```
 
-5. Switch to the `newBranch` branch (this will create a local branch tracking the remote):
+5. Switch to the `newBranch` branch :
 
 ```bash
 git switch newBranch
@@ -74,7 +74,7 @@ cd AppsTeamChallenge
 git branch -a
 ```
 
-5. Basculez sur la branche `newBranch` (cela créera une branche locale suivie de la branche distante) :
+5. Basculez sur la branche `newBranch` :
 
 ```bash
 git switch newBranch
