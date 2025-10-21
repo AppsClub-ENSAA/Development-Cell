@@ -24,7 +24,7 @@ notepad  fileName
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
-git config --global core.editor "notepad"   # or another editor
+git config --global core.editor "code --wait"
 git config --global init.defaultBranch main
 ```
 
