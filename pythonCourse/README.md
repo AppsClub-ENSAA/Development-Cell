@@ -22,5 +22,5 @@ pythonCourse/
 ├── Session 3/             # Web Scraping, Functions & Walkthroughs
 ├── Session 4/             # Data Structures (Lists, Sets, Dicts) & API Optimization
 ├── Session 5/             # OOP first part
-├── Session 3/             # The pillars of OOP
+├── Session 6/             # The pillars of OOP
 └── README.md              # This file
